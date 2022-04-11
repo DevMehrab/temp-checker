@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #030303;
+	font-family: 'Poppins', sans-serif;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.hero {
+	background-image: url("./img/hero2.jpg");
+	height: 100vh;
+	width: 100vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+}
+.hero .input {
+	width: 90vw;
+	max-width: 400px;
+	margin: 10px 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.37);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .5s all ease;
+}
+.hero .input:hover {
+	border-bottom: 2px solid rgba(255, 255, 255, 0.37);
+}
+
+.input input {
+	border: none;
+	background-color: transparent;
+	outline: none;
+	width: 100%;
+
+	color: rgb(240, 240, 240);
+	font-family: 'Open Sans', sans-serif;
+	padding: 5px;
+}
+.input i {
+	color: rgba(255, 255, 255, 0.37);
+}
+
+.tempBox{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+}
+.tempBox span{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+	color: white;
+	font-weight: 200;
+}
+.tempBox span i{
+	color: white;
+	font-weight: 200;
+}
+
+.locDis{
+	font-size: 15px;
+	margin: 0;
+}
+.temp{
+	margin-top: 80px;
+	font-size: 55px;
+	color: white;
+	font-weight: 200;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.info {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	grid-gap: 5px;
+	width: 90%;
+	max-width: 800px;
+	margin: auto;
+	margin-top: 12px;
+	position: relative;
+	top:-200px
+}
+.info .infoTxt{
+	font-size: 30px;
+}
+.container{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	background-color: rgba(255, 255, 255, 0.514);
+	padding: 10px 0;
+	border-radius: 5px;
+}
+.container i{
+	font-size: 40px;
+	margin: 10px;
+}
+
+
+::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 0.37);
+
+	font-family: 'Open Sans', sans-serif;
+}
+
+footer{
+	color: #292929;
+	text-align: center;
+	font-size: small;
+	margin-top: 5px;
+}
+@media only screen and (max-width: 800px) {
+	.info {
+		position: relative;
+		top:0;
+	}
+  }
