@@ -10,7 +10,7 @@ let loc ="dhaka"
 
 input.addEventListener('input', () => {
     loc = input.value
-    fetch(`https://api.weatherapi.com/v1/current.json?key=a4908f84f1f5409090f34508221104 &q=${loc}&aqi=no`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=a4908f84f1f5409090f34508221104&q=${loc}&aqi=no`)
         .then(response => response.json())
         .then(response => {
             locDis.innerHTML = `${response.location.name},${response.location.country} `
@@ -26,7 +26,7 @@ input.addEventListener('input', () => {
     }
 })
 
-fetch(`https://api.weatherapi.com/v1/current.json?key=a4908f84f1f5409090f34508221104 &q=${loc}&aqi=no`)
+fetch(`https://api.weatherapi.com/v1/current.json?key=a4908f84f1f5409090f34508221104&q=${loc}&aqi=no`)
     .then(response => response.json())
     .then(response => {
         locDis.innerHTML = `${response.location.name},${response.location.country} `
